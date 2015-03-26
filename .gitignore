@@ -1,0 +1,6 @@
+.places
+auto-save-list/*
+backups/*
+el-get/*
+elpa/*
+*~
