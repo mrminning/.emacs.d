@@ -4,9 +4,12 @@
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 
 ;; Turn off mouse interface early in startup to avoid momentary display
-(if (fboundp 'menu-bar-mode) (menu-bar-mode -1))
+;;(if (fboundp 'menu-bar-mode) (menu-bar-mode -1))
 (if (fboundp 'tool-bar-mode) (tool-bar-mode -1))
 (if (fboundp 'scroll-bar-mode) (scroll-bar-mode -1))
+
+;; No splash screen
+(setq inhibit-startup-message t)
 
 ;; Set path to dependencies
 (setq site-lisp-dir
@@ -70,13 +73,17 @@
                       phpunit
                       smart-tab
                       web-mode
+                      yasnippets
                       ))
 (el-get 'sync my-packages)
 
-;; Setup environment variables from the user's shell.
-;;(when is-mac
-;;  (require-package 'exec-path-from-shell)
-;;  (exec-path-from-shell-initialize))
+(when is-mac  
+  ;;(setq mac-option-modifier 'alt)
+  ;;(setq mac-command-modifier 'meta)
+  (global-set-key [kp-delete] 'delete-char) ;; sets fn-delete to be right-delete
+  (setq ns-right-alternate-modifier nil)
+  )
+
 
 ;; Setup ace-jump-mode
 (autoload
@@ -121,6 +128,10 @@
 
 ;; Setup ibuffer to list buffers
 (defalias 'list-buffers 'ibuffer)
+
+;; Setup yasnippets
+(require 'yasnippets)
+(yas-global-mode 1)
 
 ;; make indentation commands use space only (never tab character)
 (setq-default indent-tabs-mode nil) ; emacs 23.1, 24.2, default to t
