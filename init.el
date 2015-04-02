@@ -66,12 +66,17 @@
 
 ;; Packages to install
 (defvar my-packages '(
+                      auto-complete
                       ace-jump-mode
                       expand-region
+                      emacs-flymake
+                      feature-mode
                       multiple-cursors
                       php-mode
                       phpunit
+                      php-auto-yasnippets
                       smart-tab
+                      smartparens
                       web-mode
                       yasnippets
                       ))
@@ -84,6 +89,9 @@
   (setq ns-right-alternate-modifier nil)
   )
 
+;; Setup auto-complete
+;;(setq ac-user-dictionary '(expand-file-name "my.dict" user-emacs-directory))
+(add-to-list 'ac-dictionary-directories "~/.emacs.d/ac-dict")
 
 ;; Setup ace-jump-mode
 (autoload
@@ -116,10 +124,13 @@
 (add-to-list 'auto-mode-alist '("\\.tpl\\.php\\'" . web-mode))
 (add-to-list 'auto-mode-alist '("\\.html?\\'" . web-mode))
 
+;; Setup Electric Pair
+(electric-pair-mode)
+
 ;; Setup recent mode
 (require 'recentf)
 (recentf-mode 1)
-(setq recentf-max-menu-items 25)
+(setq recentf-max-menu-items 50)
 (global-set-key "\C-x\ \C-r" 'recentf-open-files)
 
 ;; Setup move-text
@@ -132,6 +143,10 @@
 ;; Setup yasnippets
 (require 'yasnippets)
 (yas-global-mode 1)
+(require 'php-auto-yasnippets)
+(setq php-auto-yasnippet-php-program "~/.emacs.d/el-get/php-auto-yasnippets/Create-PHP-YASnippet.php")
+;;(define-key php-mode-map (kbd "C-c C-y") 'yas/create-php-snippet)
+(define-key global-map (kbd "C-c C-y") 'yas/create-php-snippet)
 
 ;; make indentation commands use space only (never tab character)
 (setq-default indent-tabs-mode nil) ; emacs 23.1, 24.2, default to t
