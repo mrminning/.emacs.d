@@ -1,5 +1,5 @@
-(:name phpunit
-       :description "Emacs mode to phpunit and test command line tool"
+(:name emacs-flymake
+       :description "Emacs flymake"
        :type github
        :pkgname  "illusori/emacs-flymake"
        :website "https://github.com/illusori/emacs-flymake")

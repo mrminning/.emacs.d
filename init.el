@@ -1,6 +1,6 @@
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ;; Svens Emacs setting 
-;; version  2015-03-26-1
+;; version  2015-04-15
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 
 ;; Turn off mouse interface early in startup to avoid momentary display
@@ -81,6 +81,11 @@
                       yasnippets
                       ))
 (el-get 'sync my-packages)
+
+
+;;(add-to-list 'custom-theme-directory "~/.emacs.d/themes")
+(add-to-list 'custom-theme-load-path "~/.emacs.d/themes")
+(load-theme 'firecode t)
 
 (when is-mac  
   ;;(setq mac-option-modifier 'alt)
