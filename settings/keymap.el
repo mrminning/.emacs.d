@@ -8,6 +8,8 @@
 ;;(define-key my-keys-minor-mode-map "\C->" 'mc/mark-next-like-this)    
 (define-key my-keys-minor-mode-map (kbd "C-<") 'mc/mark-previous-like-this)
 (define-key my-keys-minor-mode-map (kbd "C-c C-<") 'mc/mark-all-like-this) 
+(define-key my-keys-minor-mode-map (kbd "C-c C-y") 'yas/create-php-snippet)
+(define-key my-keys-minor-mode-map (kbd "C-x C-r") 'recentf-open-files)
 
 (define-minor-mode my-keys-minor-mode
   "A minor mode so that my key settings override annoying major modes."

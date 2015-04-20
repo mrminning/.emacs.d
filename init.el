@@ -82,14 +82,7 @@
                       ))
 (el-get 'sync my-packages)
 
-
-;;(add-to-list 'custom-theme-directory "~/.emacs.d/themes")
-(add-to-list 'custom-theme-load-path "~/.emacs.d/themes")
-(load-theme 'firecode t)
-
 (when is-mac  
-  ;;(setq mac-option-modifier 'alt)
-  ;;(setq mac-command-modifier 'meta)
   (global-set-key [kp-delete] 'delete-char) ;; sets fn-delete to be right-delete
   (setq ns-right-alternate-modifier nil)
   )
@@ -104,7 +97,7 @@
   "ace-jump-mode"
   "Emacs quick move minor mode"
   t)
-;;(define-key global-map (kbd "C-c SPC") 'ace-jump-mode)
+
 (autoload
   'ace-jump-mode-pop-mark
   "ace-jump-mode"
@@ -112,7 +105,6 @@
   t)
 (eval-after-load "ace-jump-mode"
   '(ace-jump-mode-enable-mark-sync))
-;;(define-key global-map (kbd "C-x SPC") 'ace-jump-mode-pop-mark)
 
 ;; Setup expand-region
 (require 'expand-region)
@@ -136,7 +128,7 @@
 (require 'recentf)
 (recentf-mode 1)
 (setq recentf-max-menu-items 50)
-(global-set-key "\C-x\ \C-r" 'recentf-open-files)
+;;(global-set-key "\C-x\ \C-r" 'recentf-open-files)
 
 ;; Setup move-text
 (require 'move-text)
@@ -150,8 +142,6 @@
 (yas-global-mode 1)
 (require 'php-auto-yasnippets)
 (setq php-auto-yasnippet-php-program "~/.emacs.d/el-get/php-auto-yasnippets/Create-PHP-YASnippet.php")
-;;(define-key php-mode-map (kbd "C-c C-y") 'yas/create-php-snippet)
-(define-key global-map (kbd "C-c C-y") 'yas/create-php-snippet)
 
 ;; make indentation commands use space only (never tab character)
 (setq-default indent-tabs-mode nil) ; emacs 23.1, 24.2, default to t

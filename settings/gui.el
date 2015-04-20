@@ -23,4 +23,7 @@
 (put 'upcase-region 'disabled nil)
 (put 'narrow-to-region 'disabled nil)
 
+(add-to-list 'custom-theme-load-path "~/.emacs.d/themes")
+(load-theme 'firecode t)
+
 (provide 'gui)
