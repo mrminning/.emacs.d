@@ -72,6 +72,7 @@
                       emacs-flymake
                       feature-mode
                       multiple-cursors
+                      neotree
                       php-mode
                       phpunit
                       php-auto-yasnippets
@@ -110,6 +111,11 @@
 (require 'expand-region)
 ;;(global-set-key (kbd "C-=") 'er/expand-region)
 
+;; Setup neotree
+;;(add-to-list 'load-path "~/Projects/akaprojekt")
+(require 'neotree)
+(global-set-key [f8] 'neotree-toggle)
+
 ;; Setup smart-tab http://www.emacswiki.org/emacs/TabCompletion
 (require 'smart-tab)
 (global-smart-tab-mode 1)
@@ -120,6 +126,9 @@
 (add-to-list 'auto-mode-alist '("\\.blade\\.php\\'" . web-mode))
 (add-to-list 'auto-mode-alist '("\\.tpl\\.php\\'" . web-mode))
 (add-to-list 'auto-mode-alist '("\\.html?\\'" . web-mode))
+
+;; Setup php-mode
+(require 'php-mode) 
 
 ;; Setup Electric Pair
 (electric-pair-mode)
@@ -142,6 +151,8 @@
 (yas-global-mode 1)
 (require 'php-auto-yasnippets)
 (setq php-auto-yasnippet-php-program "~/.emacs.d/el-get/php-auto-yasnippets/Create-PHP-YASnippet.php")
+;;(setq yas-snippet-dirs '("~/emacs.d/snippets"  "~/Downloads/interesting-snippets"))
+(setq yas-snippet-dirs (append yas-snippet-dirs '("~/.emacs.d/snippets")))
 
 ;; make indentation commands use space only (never tab character)
 (setq-default indent-tabs-mode nil) ; emacs 23.1, 24.2, default to t

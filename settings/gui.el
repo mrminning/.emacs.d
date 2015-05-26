@@ -1,4 +1,6 @@
 ;; GUI stuff
+(add-to-list 'default-frame-alist '(width . 190)) ; character
+(add-to-list 'default-frame-alist '(height . 56)) ; lines
 
 ;; highlight current line
 (global-hl-line-mode 1)
@@ -25,5 +27,6 @@
 
 (add-to-list 'custom-theme-load-path "~/.emacs.d/themes")
 (load-theme 'firecode t)
+
 
 (provide 'gui)

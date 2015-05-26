@@ -11,6 +11,10 @@
 (define-key my-keys-minor-mode-map (kbd "C-c C-y") 'yas/create-php-snippet)
 (define-key my-keys-minor-mode-map (kbd "C-x C-r") 'recentf-open-files)
 
+;;(define-key my-keys-minor-mode-map (kbd "<tab>") 'yas-expand)
+;;(define-key my-keys-minor-mode-map (kbd "TAB") 'yas-expand)
+(define-key my-keys-minor-mode-map (kbd "C-<tab>") 'yas-expand)
+
 (define-minor-mode my-keys-minor-mode
   "A minor mode so that my key settings override annoying major modes."
   t " my-keys" 'my-keys-minor-mode-map)
