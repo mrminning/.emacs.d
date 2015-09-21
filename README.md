@@ -13,3 +13,10 @@
   * C-<: Mark previous like this
   * C->: Mark next like this
   * C-c C-<: Mark all like this
+
+## Build
+* git clone ...
+* Start Emacs
+* Copy recepies: cp *.rcp el-get/el-get/recipes/
+* Restart Emacs
+
