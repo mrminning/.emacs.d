@@ -24,7 +24,6 @@
 ;; Setup GUI
 (require 'gui)
 
-
 ;; Write backup files to own directory
 (setq backup-directory-alist
       `(("." . ,(expand-file-name
@@ -40,6 +39,14 @@
 
 ;; Are we on a mac?
 (setq is-mac (equal system-type 'darwin))
+
+;; Are we in a terminal?
+(defun is-in-terminal()
+  (not (display-graphic-p)))
+
+;; Are we in graphical mode?
+;;(defun is-in-graphical()
+;;  (display-graphic-p))
 
 ;; Load MELPA
 (when (>= emacs-major-version 24)
