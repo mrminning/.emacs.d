@@ -1,6 +1,6 @@
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ;; Svens Emacs setting 
-;; version  2015-04-15
+;; version  2015-09-25
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 
 ;; Turn off mouse interface early in startup to avoid momentary display
@@ -23,6 +23,13 @@
 
 ;; Setup GUI
 (require 'gui)
+
+;; Turn on the CUA mode. The CUA mode will:
+;; 1) {Cut, Copy, Paste, Undo} have {X, C, V, Z} keys.
+;; 2) Text selection will be highlighted. (this is default starting with emacs 23)
+;; 3) When there's a text selection, typing will override it.
+;; 4) Text selection can be done by holding down the ⇧ Shift key and press a arrow key. (default behavior starting with emacs 23)
+(cua-mode 1)
 
 ;; Write backup files to own directory
 (setq backup-directory-alist
@@ -145,6 +152,9 @@
 (recentf-mode 1)
 (setq recentf-max-menu-items 50)
 ;;(global-set-key "\C-x\ \C-r" 'recentf-open-files)
+
+;; Enable desktop save mode (open files from last session)
+(desktop-save-mode 1)
 
 ;; Setup move-text
 (require 'move-text)

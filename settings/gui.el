@@ -31,6 +31,7 @@
 
 ;;matching parenthesis highlighted  (when the cursor is on one)
 (show-paren-mode 1)
+(setq show-paren-style 'paranthesis) ; highlight entire bracket expression alt paranthesis
 
 ;(setq auto-save-default nil) ; stop creating #autosave# files'
 
