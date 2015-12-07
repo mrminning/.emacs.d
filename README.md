@@ -13,6 +13,7 @@
   * C-<: Mark previous like this
   * C->: Mark next like this
   * C-c C-<: Mark all like this
+* F8: Open NeoTree filetree
 
 ## Build
 * git clone ...

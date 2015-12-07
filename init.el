@@ -1,12 +1,15 @@
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ;; Svens Emacs setting 
-;; version  2015-09-25
+;; version  2015-12-07
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 
 ;; Turn off mouse interface early in startup to avoid momentary display
-;;(if (fboundp 'menu-bar-mode) (menu-bar-mode -1))
 (if (fboundp 'tool-bar-mode) (tool-bar-mode -1))
-(if (fboundp 'scroll-bar-mode) (scroll-bar-mode -1))
+
+;; This turns off scrollbars
+;;(if (fboundp 'scroll-bar-mode) (scroll-bar-mode -1))
+;; Try scrollbars on the right
+(set-scroll-bar-mode 'right)
 
 ;; No splash screen
 (setq inhibit-startup-message t)
@@ -24,13 +27,6 @@
 ;; Setup GUI
 (require 'gui)
 
-;; Turn on the CUA mode. The CUA mode will:
-;; 1) {Cut, Copy, Paste, Undo} have {X, C, V, Z} keys.
-;; 2) Text selection will be highlighted. (this is default starting with emacs 23)
-;; 3) When there's a text selection, typing will override it.
-;; 4) Text selection can be done by holding down the ⇧ Shift key and press a arrow key. (default behavior starting with emacs 23)
-(cua-mode 1)
-
 ;; Write backup files to own directory
 (setq backup-directory-alist
       `(("." . ,(expand-file-name
@@ -38,6 +34,16 @@
 
 ;; Make backups of files, even when they're in version control
 (setq vc-make-backup-files t)
+
+;; Count occurrances of regexp hits
+(defun count-occurences (regex string)
+  (recursive-count regex string 0))
+
+(defun recursive-count (regex string start)
+  (if (string-match regex string start)
+      (+ 1 (recursive-count regex string (match-end 0)))
+    0))
+
 
 ;; Save cursor position between sessions
 (require 'saveplace)
@@ -84,6 +90,7 @@
                       ace-jump-mode
                       expand-region
                       emacs-flymake
+                      dokuwiki-mode
                       feature-mode
                       multiple-cursors
                       neotree
