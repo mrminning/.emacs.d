@@ -1,5 +1,0 @@
-(:name phpunit
-       :description "Dynamically Generated YASnippets for PHP Code in GNU Emacs"
-       :type github
-       :pkgname  "ejmr/php-auto-yasnippets"
-       :website "https://github.com/ejmr/php-auto-yasnippets")
