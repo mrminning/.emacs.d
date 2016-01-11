@@ -1,0 +1,5 @@
+(:name emacs-flymake
+       :description "Emacs flymake"
+       :type github
+       :pkgname  "illusori/emacs-flymake"
+       :website "https://github.com/illusori/emacs-flymake")

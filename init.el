@@ -74,14 +74,16 @@
   )
 
 ;; Setup packages
-(add-to-list 'load-path 
-             (expand-file-name "el-get/el-get" user-emacs-directory))
+(add-to-list 'load-path (expand-file-name "el-get/el-get" user-emacs-directory))
+
 (unless (require 'el-get nil 'noerror)
   (with-current-buffer
       (url-retrieve-synchronously
        "https://raw.github.com/dimitri/el-get/master/el-get-install.el")
     (goto-char (point-max))
     (eval-print-last-sexp)))
+
+(add-to-list 'el-get-recipe-path (expand-file-name "el-get-user/recipes" user-emacs-directory))
 (el-get 'sync)
 
 ;; Packages to install
@@ -90,7 +92,6 @@
                       ace-jump-mode
                       expand-region
                       emacs-flymake
-                      dokuwiki-mode
                       feature-mode
                       multiple-cursors
                       neotree
