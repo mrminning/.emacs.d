@@ -10,6 +10,7 @@
 (define-key my-keys-minor-mode-map (kbd "C-c C-<") 'mc/mark-all-like-this) 
 (define-key my-keys-minor-mode-map (kbd "C-c C-y") 'yas/create-php-snippet)
 (define-key my-keys-minor-mode-map (kbd "C-x C-r") 'recentf-open-files)
+(define-key my-keys-minor-mode-map (kbd "C--") 'undo)
 
 ;;(define-key my-keys-minor-mode-map (kbd "<tab>") 'yas-expand)
 ;;(define-key my-keys-minor-mode-map (kbd "TAB") 'yas-expand)
