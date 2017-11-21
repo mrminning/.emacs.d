@@ -187,6 +187,9 @@
 ;; make tab key call indent command or insert tab character, depending on cursor position
 (setq-default tab-always-indent nil)
 
+;; Change "yes or no" to "y or n"
+(fset 'yes-or-no-p 'y-or-n-p)
+
 ;; Setup my keymap
 (require 'keymap)
 (my-keys-minor-mode 1)
