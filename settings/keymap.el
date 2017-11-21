@@ -5,6 +5,7 @@
 (define-key my-keys-minor-mode-map (kbd "C-x SPC") 'ace-jump-mode-pop-mark)
 (define-key my-keys-minor-mode-map (kbd "C-S-c C-S-c") 'mc/edit-lines)
 (define-key my-keys-minor-mode-map (kbd "C->") 'mc/mark-next-like-this)    
+(define-key my-keys-minor-mode-map (kbd "M-j") 'mc/mark-next-like-this)    
 (define-key my-keys-minor-mode-map (kbd "C-<") 'mc/mark-previous-like-this)
 (define-key my-keys-minor-mode-map (kbd "C-c C-<") 'mc/mark-all-like-this) 
 (define-key my-keys-minor-mode-map (kbd "C-c C-y") 'yas/create-php-snippet)
