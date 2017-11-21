@@ -194,3 +194,6 @@
 (require 'keymap)
 (my-keys-minor-mode 1)
 
+;; Start with empty buffer
+(setq inhibit-splash-screen t)
+(switch-to-buffer "**")
