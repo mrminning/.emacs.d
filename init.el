@@ -88,16 +88,14 @@
 
 ;; Packages to install
 (defvar my-packages '(
+                      ace-window
                       auto-complete
-                      ace-jump-mode
+                      avy
                       expand-region
                       emacs-flymake
                       feature-mode
                       multiple-cursors
                       neotree
-                      php-mode
-                      phpunit
-                      php-auto-yasnippets
                       smart-tab
                       smartparens
                       web-mode
@@ -110,26 +108,22 @@
   (setq ns-right-alternate-modifier nil)
   )
 
+;; Setup ace-window
+;; https://github.com/abo-abo/ace-window
+(global-set-key (kbd "M-o") 'ace-window)
+
 ;; Setup auto-complete
 ;;(setq ac-user-dictionary '(expand-file-name "my.dict" user-emacs-directory))
 (add-to-list 'ac-dictionary-directories "~/.emacs.d/ac-dict")
+(global-auto-complete-mode t)
 
-;; Setup ace-jump-mode
-(autoload
-  'ace-jump-mode
-  "ace-jump-mode"
-  "Emacs quick move minor mode"
-  t)
-
-(autoload
-  'ace-jump-mode-pop-mark
-  "ace-jump-mode"
-  "Ace jump back:-)"
-  t)
-(eval-after-load "ace-jump-mode"
-  '(ace-jump-mode-enable-mark-sync))
+;; Setup avy
+;; https://github.com/abo-abo/avy
+(global-set-key (kbd "C-:") 'avy-goto-char)
+(global-set-key (kbd "C-'") 'avy-goto-char-2)
 
 ;; Setup expand-region
+;; https://github.com/magnars/expand-region.el
 (require 'expand-region)
 ;;(global-set-key (kbd "C-=") 'er/expand-region)
 
@@ -149,11 +143,8 @@
 (add-to-list 'auto-mode-alist '("\\.tpl\\.php\\'" . web-mode))
 (add-to-list 'auto-mode-alist '("\\.html?\\'" . web-mode))
 
-;; Setup php-mode
-(require 'php-mode) 
-
 ;; Setup Electric Pair
-(electric-pair-mode)
+(electric-pair-mode 1)
 
 ;; Setup recent mode
 (require 'recentf)
@@ -171,8 +162,6 @@
 ;; Setup yasnippets
 (require 'yasnippets)
 (yas-global-mode 1)
-(require 'php-auto-yasnippets)
-(setq php-auto-yasnippet-php-program "~/.emacs.d/el-get/php-auto-yasnippets/Create-PHP-YASnippet.php")
 ;;(setq yas-snippet-dirs '("~/emacs.d/snippets"  "~/Downloads/interesting-snippets"))
 (setq yas-snippet-dirs (append yas-snippet-dirs '("~/.emacs.d/snippets")))
 
@@ -190,6 +179,8 @@
 ;; Change "yes or no" to "y or n"
 (fset 'yes-or-no-p 'y-or-n-p)
 
+;; Use cua-mode
+(cua-mode 1)
 ;; Setup my keymap
 (require 'keymap)
 (my-keys-minor-mode 1)
