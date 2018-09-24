@@ -2,7 +2,7 @@
 
 (define-key my-keys-minor-mode-map (kbd "C-c C-e") 'er/expand-region)
 (define-key my-keys-minor-mode-map (kbd "C-c SPC") 'avy-goto-char)
-(define-key my-keys-minor-mode-map (kbd "C-x SPC") 'avy-goto-char-2
+(define-key my-keys-minor-mode-map (kbd "C-x SPC") 'avy-goto-char-2)
 (define-key my-keys-minor-mode-map (kbd "C-S-c C-S-c") 'mc/edit-lines)
 (define-key my-keys-minor-mode-map (kbd "M-j") 'mc/mark-next-like-this)    
 (define-key my-keys-minor-mode-map (kbd "C-<") 'mc/mark-previous-like-this)
