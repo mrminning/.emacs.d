@@ -1,19 +1,15 @@
 (defvar my-keys-minor-mode-map (make-keymap) "my-keys-minor-mode keymap.")
 
 (define-key my-keys-minor-mode-map (kbd "C-c C-e") 'er/expand-region)
-(define-key my-keys-minor-mode-map (kbd "C-c SPC") 'ace-jump-mode)
-(define-key my-keys-minor-mode-map (kbd "C-x SPC") 'ace-jump-mode-pop-mark)
+(define-key my-keys-minor-mode-map (kbd "C-c SPC") 'avy-goto-char)
+(define-key my-keys-minor-mode-map (kbd "C-x SPC") 'avy-goto-char-2
 (define-key my-keys-minor-mode-map (kbd "C-S-c C-S-c") 'mc/edit-lines)
-(define-key my-keys-minor-mode-map (kbd "C->") 'mc/mark-next-like-this)    
 (define-key my-keys-minor-mode-map (kbd "M-j") 'mc/mark-next-like-this)    
 (define-key my-keys-minor-mode-map (kbd "C-<") 'mc/mark-previous-like-this)
 (define-key my-keys-minor-mode-map (kbd "C-c C-<") 'mc/mark-all-like-this) 
 (define-key my-keys-minor-mode-map (kbd "C-c C-y") 'yas/create-php-snippet)
 (define-key my-keys-minor-mode-map (kbd "C-x C-r") 'recentf-open-files)
 (define-key my-keys-minor-mode-map (kbd "C--") 'undo)
-
-;;(define-key my-keys-minor-mode-map (kbd "<tab>") 'yas-expand)
-;;(define-key my-keys-minor-mode-map (kbd "TAB") 'yas-expand)
 (define-key my-keys-minor-mode-map (kbd "C-<tab>") 'yas-expand)
 
 (define-minor-mode my-keys-minor-mode

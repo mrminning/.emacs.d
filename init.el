@@ -119,8 +119,8 @@
 
 ;; Setup avy
 ;; https://github.com/abo-abo/avy
-(global-set-key (kbd "C-:") 'avy-goto-char)
-(global-set-key (kbd "C-'") 'avy-goto-char-2)
+;(global-set-key (kbd "C-:") 'avy-goto-char)
+;(global-set-key (kbd "C-'") 'avy-goto-char-2)
 
 ;; Setup expand-region
 ;; https://github.com/magnars/expand-region.el
