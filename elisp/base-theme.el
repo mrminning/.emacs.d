@@ -13,4 +13,8 @@
 (line-number-mode 1)
 (column-number-mode 1)
 
+(setq default-frame-alist
+      (append default-frame-alist '((inhibit-double-buffering . t))))
+
+
 (provide 'base-theme)
