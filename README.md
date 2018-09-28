@@ -9,10 +9,6 @@ Emacs-bootstrap uses opinionated code templates which will be used to generate y
 It enables you to select the programming languages you work with the most and will generate enough Emacs configs
 to get you started crunching code.
 
-* Features
-  1. Multiple programming languages available
-  2. Theme selection
-  3. Completion frontend installation
 
 * Installation
 
@@ -64,22 +60,22 @@ Try it out, press C-x and which-key will display available shortcuts that you ca
 |------------------+------------------------------------------+-------------------------------------|
 
 my-keys-minor mode
-|------------------+------------------------------------------+-------------------------------------|
-| Shortcut         | Function                                 | Provider / Package                  |
-|------------------+------------------------------------------+-------------------------------------|
-| C-c Space        | avy-goto-char			      | Avy		                    |
-|------------------+------------------------------------------+-------------------------------------|
-* C-x SPC: ace-jump-mode-pop-mark
-* C-x C-r: Recent files
-* M-up: Move selected text up
-* M-down: Move selected text down
-* C-c C-y: Ya-php-snippet
-* C-c C-e: Expand region
-* Multiple cursors
-  * C-<: Mark previous like this
-  * C->: Mark next like this
-  * C-c C-<: Mark all like this
-* F8: Open NeoTree filetree
+|-----------+---------------------------------------+---------------------|
+| Shortcut  | Function                              | Provider / Package  |
+|-----------+---------------------------------------+---------------------|
+| C-c Space | avy-goto-char			 | Avy		 |
+|-----------+---------------------------------------+---------------------|
+| C-x SPC   | ace-jump-mode-pop-mark                |                     |
+| C-x C-r   | Recent files                          |                     |
+| M-up      | Move selected text up                 |                     |
+| M-down    | Move selected text down               |                     |
+| C-c C-y   | Ya-php-snippet                        |                     |
+| C-c C-e   | Expand region                         |                     |
+| C-<       | Mark previous like this               |                     |
+| C->       | Mark next like this                   |                     |
+| C-c C-<   | Mark all like this                    |                     |
+|           |                                       |                     |
+
 
 Programming language specific shortcuts:
 
