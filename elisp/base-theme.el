@@ -18,4 +18,8 @@
 	(append default-frame-alist '((inhibit-double-buffering . t))))
   )
 
+;; Set a smaller font
+(set-frame-font
+ "-unknown-DejaVu Sans Mono-normal-normal-normal-*-14-*-*-*-m-0-iso10646-1")
+
 (provide 'base-theme)
