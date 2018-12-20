@@ -19,7 +19,6 @@
   )
 
 ;; Set a smaller font
-(set-frame-font
- "-unknown-DejaVu Sans Mono-normal-normal-normal-*-13-*-*-*-m-0-iso10646-1")
+(set-frame-font  "Hack Regular 10" nil t)
 
 (provide 'base-theme)
