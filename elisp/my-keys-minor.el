@@ -11,6 +11,9 @@
 (define-key my-keys-minor-mode-map (kbd "C-c C-<") 'mc/mark-all-like-this)
 (define-key my-keys-minor-mode-map (kbd "C-x C-r") 'recentf-open-files)
 (define-key my-keys-minor-mode-map (kbd "C--") 'undo)
+(define-key my-keys-minor-mode-map (kbd "M-g g") 'avy-goto-line)
+(define-key my-keys-minor-mode-map (kbd "M-g w") 'avy-goto-word-1)
+
 ;;(define-key my-keys-minor-mode-map (kbd "C-<tab>") 'yas-expand)
 
 (define-minor-mode my-keys-minor-mode
