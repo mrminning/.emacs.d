@@ -1,7 +1,7 @@
 .places
-ac-comphist.dat
-auto-save-list/*
-backups/*
-el-get/*
 elpa/*
+private/*
+.custom.el
+imp
+smex-items
 *~
