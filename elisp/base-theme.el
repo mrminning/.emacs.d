@@ -1,7 +1,13 @@
-(use-package zenburn-theme
+;;(use-package zenburn-theme
+;;  :defer t
+;;  :init
+;;  (load-theme 'zenburn t))
+
+(use-package misterioso-theme
   :defer t
   :init
-  (load-theme 'zenburn t))
+  (load-theme 'misterioso))
+
 
 ;; My settings below
 (set-scroll-bar-mode 'right)
@@ -18,8 +24,8 @@
   )
 
 ;; Set font Hack
-;;(set-frame-font  "-SRC-Hack-normal-normal-normal-*-13-*-*-*-m-0-iso10646-1" nil t)
+;;(set-frame-font  "-*-Hack-normal-normal-normal-*-13-*-*-*-m-0-iso10646-1" nil t)
 ;; Set font DejaVu
-(set-frame-font  "-PfEd-DejaVu Sans Mono-normal-normal-normal-*-12-*-*-*-m-0-iso10646-1" nil t)
+(set-frame-font  "-*-DejaVu Sans Mono-normal-normal-normal-*-12-*-*-*-m-0-iso10646-1" nil t)
 
 (provide 'base-theme)
