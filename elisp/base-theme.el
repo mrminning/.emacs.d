@@ -10,7 +10,6 @@
 (global-hl-line-mode 1)
 
 ;; show line numbers and col numbers on the toolbar
-(line-number-mode 1)
 (column-number-mode 1)
 
 (when (>= emacs-major-version 26)
@@ -18,7 +17,9 @@
 	(append default-frame-alist '((inhibit-double-buffering . t))))
   )
 
-;; Set a smaller font
-(set-frame-font  "Hack Regular 10" nil t)
+;; Set font Hack
+;;(set-frame-font  "-SRC-Hack-normal-normal-normal-*-13-*-*-*-m-0-iso10646-1" nil t)
+;; Set font DejaVu
+(set-frame-font  "-PfEd-DejaVu Sans Mono-normal-normal-normal-*-12-*-*-*-m-0-iso10646-1" nil t)
 
 (provide 'base-theme)
