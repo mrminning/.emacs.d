@@ -1,3 +1,4 @@
+
 # emacs-bootstrap
 
 http://emacs-bootstrap.com
@@ -14,7 +15,7 @@ Here are some basic shortcuts that Emacs provides along with configured shortcut
 Note that C- means pressing your Control key + some other key. For example, C-x means Control + X.
 Same goes for M which is your Meta key. That can be the Escape key on your keyboard or the ALT key.
 
-|----------|----------------------|----------|
+
 | Shortcut | Function             | Provider |
 |----------|----------------------|----------|
 | C-x C-f  | Open file            | Emacs    |
@@ -27,12 +28,12 @@ Same goes for M which is your Meta key. That can be the Escape key on your keybo
 | C-x 2    | Split horizontally   | Emacs    |
 | C-x 3    | Split Vertically     | Emacs    |
 | C-x 0    | Remove current split | Emacs    |
-|----------|----------------------|----------|
+
 
 One of the packages installed is called 'which-key' which displays the list of available keys after a certain prefix.
 Try it out, press C-x and which-key will display available shortcuts that you can use to invoke a certain functionality.
 
-|------------------|------------------------------------------|-------------------------------------|
+
 | Shortcut         | Function                                 | Provider / Package                  |
 |------------------|------------------------------------------|-------------------------------------|
 | C-C Space        | Ace-jump-mode (Code navigation)          | Bootstrap / Ace-Jump                |
@@ -46,7 +47,7 @@ Try it out, press C-x and which-key will display available shortcuts that you ca
 | C-x Down         | Go to buffer below (In split)            | Bootstrap / Windmove                |
 | C-x Left         | Go to buffer on the left (In split)      | Bootstrap / Windmove                |
 | C-x Right        | Go to buffer on the right (In split)     | Bootstrap / Windmove                |
-|------------------|------------------------------------------|-------------------------------------|
+
 
 my-keys-minor mode
 |-----------|---------------------------------------|---------------------|
@@ -62,7 +63,7 @@ my-keys-minor mode
 
 Programming language specific shortcuts:
 
-|----------|----------------------------------------------------------|----------------------|--------------------------|
+
 | Shortcut | Function                                                 | Programming Language | Provider / Package       |
 |----------|----------------------------------------------------------|----------------------|--------------------------|
 | C-x p e  | Pyenv activate in current project                        | Python               | python-mode, elpy, pyenv |
@@ -83,7 +84,7 @@ Programming language specific shortcuts:
 | C-c [    | emmet-mode previous edit point                           | HTML                 | web-mode, emmet-mode     |
 | C-c ]    | emmet-mode next edit point                               | HTML                 | web-mode, emmet-mode     |
 | C-c o b  | Open the current file in the browser                     | HTML                 | web-mode                 |
-|----------|----------------------------------------------------------|----------------------|--------------------------|
+
 
 * Awesome Emacs Learning Resources
 *** Reading content
