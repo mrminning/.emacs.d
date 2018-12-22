@@ -10,6 +10,10 @@
 
 (use-package dashboard
   :config
+  (setq dashboard-items '((recents . 10)
+			  (bookmarks . 5)
+			  (projects . 5)
+			  (registers . 5)))
   (dashboard-setup-startup-hook))
 
 (use-package ediff
@@ -68,9 +72,9 @@
 
 (use-package magit
   :config
-  
+
   (setq magit-completing-read-function 'ivy-completing-read)
-  
+
   :bind
   ;; Magic
   ("C-x g s" . magit-status)
@@ -125,9 +129,9 @@
   :config
   (setq projectile-known-projects-file
         (expand-file-name "projectile-bookmarks.eld" temp-dir))
-  
+
   (setq projectile-completion-system 'ivy)
-  
+
   (projectile-global-mode))
 
 (use-package recentf
