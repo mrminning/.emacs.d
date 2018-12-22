@@ -19,7 +19,7 @@ Try it out, press C-x and which-key will display available shortcuts that you ca
 
 ## General
 | Shortcut          | Function                                                       | Provider |
-|-------------------+----------------------------------------------------------------+----------|
+|-------------------|----------------------------------------------------------------|----------|
 | C-x C-f           | Open file                                                      | Emacs    |
 | C-x C-s           | Save file                                                      | Emacs    |
 | C-x C-r           | Recent files                                                   | Emacs    |
@@ -40,7 +40,7 @@ Try it out, press C-x and which-key will display available shortcuts that you ca
 
 ## Bookmarks
 | Shortcut            | Function            | Description                                             | Provider |
-|---------------------+---------------------+---------------------------------------------------------+----------|
+|---------------------|---------------------|---------------------------------------------------------|----------|
 | C-x r m             | bookmark-set        | set a bookmark at the current location (e.g. in a file) |          |
 | C-x r b             | bookmark-jump       | jump to a bookmark                                      |          |
 | C-x r l             | bookmark-bmenu-list | list your bookmarks                                     |          |
@@ -48,7 +48,7 @@ Try it out, press C-x and which-key will display available shortcuts that you ca
 
 ## Navigation and jumping around
 | Shortcut         | Function            | Description                              | Provider / Package                  |
-|------------------+---------------------+------------------------------------------+-------------------------------------|
+|------------------|---------------------|------------------------------------------|-------------------------------------|
 | C-space          | set-mark-command    | Mark location                            | Emacs                               |
 | C-u C-space      |                     | Goto mark                                | Emacs                               |
 | M-g M-g          | goto-line           | Goto line                                | Emacs                               |
@@ -74,7 +74,7 @@ Try it out, press C-x and which-key will display available shortcuts that you ca
 
 ## Marking
 | Shortcut | Function               | Description                    | Provider / Package |
-|----------+------------------------+--------------------------------+--------------------|
+|----------|------------------------|--------------------------------|--------------------|
 | C-x h    | mark-whole-buffer      | Mark whole buffer              | Emacs              |
 | C-c C-e  | expand-region          | Expand selection. char -> word | Emacs              |
 | M-j      | mc/mark-next-like-this | Mark next like this            | multiple-cursors   |
@@ -83,7 +83,7 @@ Try it out, press C-x and which-key will display available shortcuts that you ca
 
 ## Seach and replace
 | Shortcut                 | Function             | Description                                                                  | Provider / Package |
-|--------------------------+----------------------+------------------------------------------------------------------------------+--------------------|
+|--------------------------|----------------------|------------------------------------------------------------------------------|--------------------|
 | M-x rgrep                | rgrep                | Recursive search                                                             |                    |
 | M-x query-replace-regexp | query-replace-regexp | Search/replace with regexp. "y" replace one, "!" replaces all, "n" skips one |                    |
 | M-%                      | query-replace        | Seach and replace                                                            |                    |
@@ -95,21 +95,21 @@ Try it out, press C-x and which-key will display available shortcuts that you ca
 
 ## Rectangle
 | Shortcut | Function       | Description                    | Provider / Package |
-|----------+----------------+--------------------------------+--------------------|
+|----------|----------------|--------------------------------|--------------------|
 | C-x r k  | kill-rectangle | Delete the region-rectangle    |                    |
 | C-x r y  | yank-rectangle | Yank the last killed rectangle |                    |
 
 
 ## Macro
 | Shortcut | Function                             | Description                    | Provider / Package |
-|----------+--------------------------------------+--------------------------------+--------------------|
+|----------|--------------------------------------|--------------------------------|--------------------|
 | F3       | kmacro-start-macro-or-insert-counter | Start recording keyboard input |                    |
 | F4       | kmacro-end-or-call-macro             | Stop recording / Run macro     |                    |
 
 
 ## Info
 | Shortcut       | Function             | Description                                               | Provider / Package |
-|----------------+----------------------+-----------------------------------------------------------+--------------------|
+|----------------|----------------------|-----------------------------------------------------------|--------------------|
 | C-h k          | describe-key         | What command does this sequence do, and tell me about it. |                    |
 | M-=            | count-words-region   | Count words in region                                     |                    |
 | C-x =          | what-cursor-position | Info about char under cursor                              |                    |
