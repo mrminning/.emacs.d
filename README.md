@@ -127,7 +127,7 @@ Try it out, press C-x and which-key will display available shortcuts that you ca
 
 ## Keys
 | Shortcut | Function         | Description                                               | Provider / Package |
-|----------+------------------+-----------------------------------------------------------+--------------------|
+|----------|------------------|-----------------------------------------------------------|--------------------|
 |          | describe-key     | What command does this sequence do, and tell me about it. |                    |
 |          | global-unset-key |                                                           |                    |
 |          | global-set-key   |                                                           |                    |
