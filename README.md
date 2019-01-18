@@ -74,7 +74,7 @@ Try it out, press C-x and which-key will display available shortcuts that you ca
 
 ## Editing
 | Shortcut | Function       | Description                      | Provider / Package |
-|----------+----------------+----------------------------------+--------------------|
+|----------|----------------|----------------------------------|--------------------|
 | M-<up>   | move-text-up   | Move current line/selection up   | move-text          |
 | M-<down> | move-text-down | Move current line/selection down | move-text          |
 

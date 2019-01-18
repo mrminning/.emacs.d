@@ -21,4 +21,9 @@
 (require 'base-global-keys)
 (require 'my-keys-minor)
 
+(require 'lang-go)
+(require 'lang-javascript)
+(require 'lang-php)
 (require 'lang-python)
+(require 'lang-rust)
+(require 'lang-web)
