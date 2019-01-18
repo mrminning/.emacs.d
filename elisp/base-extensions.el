@@ -1,8 +1,6 @@
-
 (use-package avy
   :bind
   ("C-c SPC" . avy-goto-char))
-
 
 (use-package company
   :config
@@ -167,5 +165,10 @@
 (use-package yasnippet
   :config
   (yas-global-mode 1))
+
+;;(require 'move-text)
+(use-package move-text
+  :config
+  (move-text-default-bindings))
 
 (provide 'base-extensions)
