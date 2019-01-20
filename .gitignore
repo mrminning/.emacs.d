@@ -1,4 +1,5 @@
 .places
+ede-projects.el
 elpa/*
 private/*
 .custom.el
