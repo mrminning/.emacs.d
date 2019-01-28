@@ -171,4 +171,10 @@
   :config
   (move-text-default-bindings))
 
+;; use keyfreq-show to see how many times you used a command.
+(use-package keyfreq
+  :config
+  (keyfreq-mode 1)
+  (keyfreq-autosave-mode 1))
+
 (provide 'base-extensions)
