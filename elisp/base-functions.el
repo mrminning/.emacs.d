@@ -11,18 +11,15 @@
   (not (display-graphic-p)))
 
 ;; Duplicate line with C-S-d
- (defun duplicate-line ()
-   (interactive)
-   (let ((col (current-column)))
-     (move-beginning-of-line 1)
-     (kill-line)
-     (yank)
-     (newline)
-     (yank)
-     (move-to-column col)))
- (global-set-key (kbd "C-S-d") 'duplicate-line)
-
-
-
+(defun duplicate-line ()
+  (interactive)
+  (let ((col (current-column)))
+    (move-beginning-of-line 1)
+    (kill-line)
+    (yank)
+    (newline)
+    (yank)
+    (move-to-column col)))
+(global-set-key (kbd "C-S-d") 'duplicate-line)
 
 (provide 'base-functions)
