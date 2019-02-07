@@ -162,6 +162,8 @@
 
 (use-package wgrep)
 
+(use-package ag)
+
 (use-package yasnippet
   :config
   (yas-global-mode 1))
