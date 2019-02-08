@@ -70,7 +70,7 @@ Try it out, press C-x and which-key will display available shortcuts that you ca
 | C-x Down         |                     | Go to buffer below (In split)            | Bootstrap / Windmove                |
 | C-x Left         |                     | Go to buffer on the left (In split)      | Bootstrap / Windmove                |
 | C-x Right        |                     | Go to buffer on the right (In split)     | Bootstrap / Windmove                |
-
+Install ag to use Projectile-ag sudo apt install silversearcher-ag
 
 ## Editing
 | Shortcut | Function       | Description                      | Provider / Package |
