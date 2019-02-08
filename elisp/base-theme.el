@@ -3,11 +3,7 @@
 ;;  :init
 ;;  (load-theme 'zenburn t))
 
-(use-package misterioso-theme
-  :defer t
-  :init
-  (load-theme 'misterioso))
-
+(load-theme 'misterioso)
 
 ;; My settings below
 (set-scroll-bar-mode 'right)
