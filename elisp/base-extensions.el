@@ -18,6 +18,11 @@
   :config
   (setq ediff-window-setup-function 'ediff-setup-windows-plain)
   (setq-default ediff-highlight-all-diffs 'nil)
+  ;; put windows side by side
+  (setq ediff-split-window-function (quote split-window-horizontally))
+  ;;revert windows on exit - needs winner mode
+  (winner-mode)
+  (add-hook 'ediff-after-quit-hook-internal 'winner-undo)
   (setq ediff-diff-options "-w"))
 
 (use-package exec-path-from-shell
