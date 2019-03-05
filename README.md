@@ -48,7 +48,8 @@ Try it out, press C-x and which-key will display available shortcuts that you ca
 
 ## Navigation and jumping around
 | Shortcut         | Function            | Description                              | Provider / Package                  |
-|------------------|---------------------|------------------------------------------|-------------------------------------|
+|------------------+---------------------+------------------------------------------+-------------------------------------|
+| M-o              | ace-window          | Ace Window välj fönster                  | ace-window                          |
 | C-space          | set-mark-command    | Mark location                            | Emacs                               |
 | C-u C-space      |                     | Goto mark                                | Emacs                               |
 | M-g M-g          | goto-line           | Goto line                                | Emacs                               |

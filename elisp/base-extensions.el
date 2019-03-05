@@ -184,4 +184,8 @@
   (keyfreq-mode 1)
   (keyfreq-autosave-mode 1))
 
+(use-package ace-window
+  :config
+  (global-set-key (kbd "M-o") 'ace-window))
+
 (provide 'base-extensions)
