@@ -10,8 +10,8 @@
 	       (company-mode t)
 	       (add-to-list 'company-backends 'company-ac-php-backend))))
 
-(use-package phpunit
-  :mode
-  (("\\.php\\'" . phpunit-mode)))
-
+;;(use-package phpunit
+;;  :mode
+;;  (("\\.php\\'" . phpunit-mode)))
+;;
 (provide 'lang-php)
