@@ -188,4 +188,6 @@
   :config
   (global-set-key (kbd "M-o") 'ace-window))
 
+(use-package dokuwiki)
+
 (provide 'base-extensions)
