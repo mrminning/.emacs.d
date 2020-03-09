@@ -84,5 +84,8 @@
 ;; Delete trailing whitespace before save
 (add-hook 'before-save-hook 'delete-trailing-whitespace)
 
+;; Start server
+(server-start)
+
 (provide 'base)
 ;;; base ends here
