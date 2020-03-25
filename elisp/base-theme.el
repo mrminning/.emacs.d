@@ -22,6 +22,6 @@
 ;; Set font Hack
 ;;(set-frame-font  "-*-Hack-normal-normal-normal-*-13-*-*-*-m-0-iso10646-1" nil t)
 ;; Set font DejaVu
-(set-frame-font  "-*-DejaVu Sans Mono-normal-normal-normal-*-12-*-*-*-m-0-iso10646-1" nil t)
+(set-frame-font  "-*-DejaVu Sans Mono-normal-normal-normal-*-13-*-*-*-m-0-iso10646-1" nil t)
 
 (provide 'base-theme)
