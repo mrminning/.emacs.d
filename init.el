@@ -28,8 +28,7 @@
 (require 'lang-javascript)
 (require 'lang-web)
 (require 'lang-haskell)
-(require 'lang-elixir)
+;; (require 'lang-elixir)
 (require 'lang-rust)
 (require 'lang-racket)
 (require 'lang-c)
-
