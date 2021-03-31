@@ -85,7 +85,7 @@
 (add-hook 'before-save-hook 'delete-trailing-whitespace)
 
 ;; Start server
-(server-start)
+;; (server-start)
 
 (provide 'base)
 ;;; base ends here
