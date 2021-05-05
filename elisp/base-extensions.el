@@ -194,4 +194,20 @@
   :mode (("\\.yml$" . yaml-mode)
 	 ("\\.yaml$" . yaml-mode)))
 
+;; Open w f8 and close w C-c C-q
+(use-package deft
+  :bind ("<f8>" . deft)
+  :commands (deft)
+  :config (setq deft-directory "~/deft"
+		deft-extensions '("md" "org" "txt")
+		deft-recursive t))
+
+(use-package markdown-mode
+  :ensure t
+  :commands (markdown-mode gfm-mode)
+  :mode (("README\\.md\\'" . gfm-mode)
+         ("\\.md\\'" . markdown-mode)
+         ("\\.markdown\\'" . markdown-mode))
+  :init (setq markdown-command "multimarkdown"))
+
 (provide 'base-extensions)
