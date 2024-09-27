@@ -68,10 +68,10 @@
   :config
   (hlinum-activate))
 
-(use-package linum
-  :config
-  (setq linum-format " %3d ")
-  (global-linum-mode nil))
+;;(use-package linum
+;;  :config
+;;  (setq linum-format " %3d ")
+;;  (global-linum-mode nil))
 
 (use-package magit
   :config
