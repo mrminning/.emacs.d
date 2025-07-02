@@ -47,13 +47,6 @@
   ("C-x C-f" . counsel-find-file)
   ("C-x c k" . counsel-yank-pop))
 
-;; (use-package counsel-projectile
-;;   :bind
-;;   ("C-x v" . counsel-projectile)
-;;   ("C-x c p" . counsel-projectile-ag)
-;;   :config
-;;   (counsel-projectile-on))
-
 (use-package ivy
   :bind
   ("C-x s" . swiper)
@@ -63,15 +56,6 @@
   (setq ivy-use-virtual-buffers nil)
   (define-key read-expression-map (kbd "C-r") 'counsel-expression-history))
 
-
-(use-package hlinum
-  :config
-  (hlinum-activate))
-
-;;(use-package linum
-;;  :config
-;;  (setq linum-format " %3d ")
-;;  (global-linum-mode nil))
 
 (use-package magit
   :config
@@ -97,14 +81,6 @@
   ("C-<" . mc/mark-previous-like-this)
   ("C-c C->" . mc/mark-all-like-this))
 
-(use-package neotree
-  :config
-  (setq neo-theme 'arrow
-        neotree-smart-optn t
-        neo-window-fixed-size nil)
-  ;; Disable linum for neotree
-  (add-hook 'neo-after-create-hook 'disable-neotree-hook))
-
 (use-package org
   :config
   (setq org-directory "~/org-files"
@@ -112,12 +88,6 @@
   :bind
   ("C-c l" . org-store-link)
   ("C-c a" . org-agenda))
-
-;; (use-package org-projectile
-;;   :config
-;;   (org-projectile-per-project)
-;;   (setq org-projectile-per-project-filepath "todo.org"
-;; 	org-agenda-files (append org-agenda-files (org-projectile-todo-files))))
 
 (use-package org-bullets
   :config
@@ -127,15 +97,6 @@
               (org-bullets-mode t))))
 
 (use-package page-break-lines)
-
-;; (use-package projectile
-;;   :config
-;;   (setq projectile-known-projects-file
-;;         (expand-file-name "projectile-bookmarks.eld" temp-dir))
-
-;;   (setq projectile-completion-system 'ivy)
-
-;;   (projectile-global-mode))
 
 (use-package recentf
   :config

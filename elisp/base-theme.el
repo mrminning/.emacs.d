@@ -9,7 +9,7 @@
 (set-scroll-bar-mode 'right)
 
 ;; highlight current line
-(global-hl-line-mode 1)
+(global-display-line-numbers-mode 1)
 
 ;; show line numbers and col numbers on the toolbar
 (column-number-mode 1)
